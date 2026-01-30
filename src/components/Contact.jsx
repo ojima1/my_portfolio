@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark">Email</h4>
-                  <p className="text-gray-600">gloria.dennis@example.com</p>
+                  <p className="text-gray-600">gloriadennis0927@gmail.com</p>
                 </div>
               </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark">Phone</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="text-gray-600">(+234)8168288708</p>
                 </div>
               </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-dark">Location</h4>
-                  <p className="text-gray-600">San Francisco, California</p>
+                  <p className="text-gray-600">Abuja, Nigeria</p>
                 </div>
               </div>
             </div>
@@ -72,29 +72,28 @@ const Contact = () => {
               <h4 className="font-semibold text-dark mb-4">Connect with me</h4>
               <div className="flex gap-4">
                 <a 
-                  href="https://linkedin.com" 
-                  target="_blank" 
+                  href="https://www.linkedin.com/in/dennisgloria" 
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-primary text-white p-3 rounded-lg transition duration-300"
                 >
                   <FaLinkedin className="text-xl" />
                 </a>
                 <a 
-                  href="https://github.com" 
+                  href="https://github.com/ojima1" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-dark text-white p-3 rounded-lg transition duration-300"
                 >
                   <FaGithub className="text-xl" />
                 </a>
-                <a 
+                {/* <a 
                   href="https://twitter.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-800 hover:bg-blue-400 text-white p-3 rounded-lg transition duration-300"
                 >
                   <FaTwitter className="text-xl" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -114,7 +113,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                  placeholder="John Doe"
+                  placeholder="Enter your name"
                 />
               </div>
 
@@ -130,7 +129,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition"
-                  placeholder="john@example.com"
+                  placeholder="Enter your email"
                 />
               </div>
 

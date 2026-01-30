@@ -4,6 +4,7 @@ import cryptoDashboardImg from "../assets/crypto-dashboard.png";
 import StreamFlixImg from "../assets/streamflix.png";
 import OPX from "../assets/opximg.png";
 import KEPA from "../assets/kepaimg.png";
+import PortfolioImg from "../assets/portfolioimg.png";
 
 const Projects = () => {
   const [projects, setProjects] = useState([
@@ -48,25 +49,16 @@ const Projects = () => {
       featured: false,
       image: KEPA
     },
-    {
-      id: 5,
-      title: 'Weather Dashboard',
-      description: 'Real-time weather application with location-based forecasts and interactive charts.',
-      technologies: ['React', 'JavaScript', 'API Integration', 'Chart.js'],
-      github: 'https://github.com',
-      liveDemo: 'https://demo.com',
-      featured: false,
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&auto=format&fit=crop'
-    },
+  
     {
       id: 6,
-      title: 'Blog CMS',
-      description: 'Content Management System for bloggers with rich text editor and SEO optimization.',
-      technologies: ['ASP.NET Core', 'React', 'Markdown', 'Azure'],
-      github: 'https://github.com',
-      liveDemo: 'https://demo.com',
+      title: 'Portfolio Website',
+      description: 'A personal portfolio website to showcase my projects and skills',
+      technologies: [ 'React', 'Tailwind CSS', 'JavaScript'],
+      github: 'https://github.com/ojima1/my_portfolio',
+      liveDemo: ' https://ojima1.github.io/my_portfolio/',
       featured: true,
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&auto=format&fit=crop'
+      image: PortfolioImg
     },
   ]);
 
