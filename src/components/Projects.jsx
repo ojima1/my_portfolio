@@ -5,11 +5,23 @@ import StreamFlixImg from "../assets/streamflix.png";
 import OPX from "../assets/opximg.png";
 import KEPA from "../assets/kepaimg.png";
 import PortfolioImg from "../assets/portfolioimg.png";
+import Exchangeimg from "../assets/ExchangeImg.jpg"
 
 const Projects = () => {
   const [projects, setProjects] = useState([
     {
       id: 1,
+      title: 'Exchange Rate Optimization',
+      description: ' Production codebase refactoring achieving 30x API call reduction.Decomposed 500-line monolith into clean architecture following SOLID principles. Delivered in 3 days using AI-assisted development.',
+      technologies: ['C#', 'ASP.NET Core', 'Clean Architecture', 'xUnit', 'AI-Assisted'],
+      github: 'https://github.com/ojima1/exchange-rate-optimization',
+      featured: true,
+      image: Exchangeimg
+
+    },
+
+    {
+      id: 2,
       title: 'crypto-dashboard',
       description: 'Modern crypto dashboard built with React & Tailwind — live market data, interactive charts, and a persistent portfolio tracker.',
       technologies: ['React', 'Tailwind CSS', 'coinGecko API'],
@@ -18,8 +30,9 @@ const Projects = () => {
       featured: true,
       image: cryptoDashboardImg
     },
+
     {
-      id: 2,
+      id: 3,
       title: 'StreamFlix',
       description: 'Netflix-inspired streaming UI built with React and TMDB API.',
       technologies: ['React', 'TMDB API', 'Tailwind CSS', 'JavaScript'],
@@ -30,7 +43,7 @@ const Projects = () => {
 
     },
     {
-      id: 3,
+      id: 4,
       title: 'OPXNG',
       description: 'An Escrow Sytem Means Of Payment.',
       technologies: ['C#', 'ASP.NET Core MVC','HTML5', 'CSS3', 'JavaScript', 'SQL Server'],
@@ -40,7 +53,7 @@ const Projects = () => {
       image: OPX
     },
     {
-      id: 4,
+      id: 5,
       title: 'KEPA',
       description: 'Secured Online Payment Portal for Kaduna State Environmental Protection Agency(KEPA)',
       technologies: ['C#', 'ASP.NET Core MVC','HTML5', 'CSS3', 'JavaScript', 'SQL Server'],
@@ -148,15 +161,17 @@ const Projects = () => {
                     <FaGithub className="text-xl" />
                     <span>Code</span>
                   </a>
-                  <a 
-                    href={project.liveDemo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-primary hover:text-indigo-400 transition"
-                  >
-                    <FaExternalLinkAlt />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.liveDemo && (
+  <a 
+    href={project.liveDemo} 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-primary hover:text-indigo-400 transition"
+  >
+    <FaExternalLinkAlt />
+    <span>Live Demo</span>
+  </a>
+)}
                 </div>
               </div>
             </div>
